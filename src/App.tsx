@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import FilterByKeywords from './components/FilterByKeywords/FilterByKeywords'
+import ArticlesSection from './components/ArticlesSection/ArticlesSection';
+import FullArticle from './components/FullArticle/FullArticle';
+import { RecoilRoot } from 'recoil';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
 
 function App() {
+  const homeRoute = <div>
+    <FilterByKeywords />
+    <ArticlesSection />
+  </div>;
+
+  const notFound = <h2 className='notFound'>the path not found</h2>;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='container'>
+        <RecoilRoot>
+          <Routes>
+            <Route path='/' element={homeRoute} />
+            <Route path='/article/:title' element={<FullArticle />} />
+            <Route path='*' element={notFound} />
+          </Routes>
+        </RecoilRoot>
+      </div>
+    </>
   );
 }
 

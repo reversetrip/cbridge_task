@@ -1,0 +1,42 @@
+.card {
+  text-align: left;
+  width: 300px;
+  border: 1px solid rgba(142, 141, 141, 0.2);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0.5px 0.5px 20px 0.2px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .cardContent {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    .cardDate {
+      display: flex;
+
+      span {
+        font-size: 1.1rem;
+        margin-left: 0.3rem;
+      }
+    }
+
+    .cardDescription {
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+  }
+
+  .linkText {
+    display: flex;
+
+    b {
+      margin-right: 0.5rem;
+    }
+  }
+}
