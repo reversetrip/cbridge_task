@@ -98,7 +98,7 @@ export default ArticleCard;
 function highlightWords(text: string, keywords: string) {
   const splittedKeys = keywords.toLowerCase().split(' ');
   const regex = splittedKeys.reduce((res, word, i) => {
-    if (i === keywords.length - 1) return res + `(${word})`;
+    if (i === keywords.length - 1) return res + `(${'\\b' + word + '\\b'})`;
     return res + `(${'\\b' + word + '\\b'})|`;
   }, '');
 
