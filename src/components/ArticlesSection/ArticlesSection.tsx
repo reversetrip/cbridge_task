@@ -3,7 +3,6 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import displayAtom from '../../recoil/display/atom';
 import ArticleCard from '../ArticleCard/ArticleCard';
-
 import {
   Article,
   ExtendedArticle,
@@ -35,7 +34,7 @@ const ArticlesSection = () => {
       </div>
       <div className='cards'>
         {
-          loading ? <CircularProgress color='success' size='5rem' />
+          loading ? <CircularProgress color='success' />
             : error ? <h2>something has happened, {error.message}</h2>
               : (display === 'cards') ? getCards(articles)
                 : getCards(filteredArticles)
