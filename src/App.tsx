@@ -20,7 +20,7 @@ function App() {
           <Routes>
             <Route path='/cbridge_task' element={homeRoute} />
             <Route path='/cbridge_task/article/:title' element={<FullArticle />} />
-            <Route path='/cbridge_task/*' element={notFound} />
+            {/* <Route path='/cbridge_task/*' element={notFound} /> */}
           </Routes>
         </RecoilRoot>
       </div>
