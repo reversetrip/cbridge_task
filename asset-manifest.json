@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cbridge_task/static/css/main.bac08de5.css",
+    "main.js": "/cbridge_task/static/js/main.9f31b675.js",
+    "index.html": "/cbridge_task/index.html",
+    "main.bac08de5.css.map": "/cbridge_task/static/css/main.bac08de5.css.map",
+    "main.9f31b675.js.map": "/cbridge_task/static/js/main.9f31b675.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bac08de5.css",
+    "static/js/main.9f31b675.js"
+  ]
+}
