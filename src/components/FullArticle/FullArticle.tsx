@@ -25,7 +25,7 @@ const FullArticle = () => {
           <p>{descWithoutAnchors.repeat(5)}</p>
           <p>{descWithoutAnchors.repeat(5)}</p>
         </div>
-        <Link to='/'>
+        <Link to='/cbridge_task'>
           <div className='linkText'>
             {<WestIcon />}
             <b>Back to homepage</b>
