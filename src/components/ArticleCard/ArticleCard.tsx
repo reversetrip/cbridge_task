@@ -81,7 +81,7 @@ const ArticleCard = (props: Article | ExtendedArticle) => {
           {getCardContent()[1]}
         </div>
         <Link
-          to={`article/${getRoute()}`}
+          to={`/article/${getRoute()}`}
           state={props}
           onClick={handleLink}>
           <div className='linkText'>

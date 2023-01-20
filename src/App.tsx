@@ -18,9 +18,9 @@ function App() {
       <div className='container'>
         <RecoilRoot>
           <Routes>
-            <Route path='/cbridge_task' element={homeRoute} />
-            <Route path='/cbridge_task/article/:title' element={<FullArticle />} />
-            {/* <Route path='/cbridge_task/*' element={notFound} /> */}
+            <Route path='/' element={homeRoute} />
+            <Route path='/article/:title' element={<FullArticle />} />
+            <Route path='*' element={notFound} />
           </Routes>
         </RecoilRoot>
       </div>

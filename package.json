@@ -1,7 +1,7 @@
 {
   "name": "cbridge-task",
   "version": "0.1.0",
-  "homepage": "https://reversetrip.github.io/cbridge_task",
+  "homepage": "/cbridge_task/#",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
