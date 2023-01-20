@@ -1,21 +1,28 @@
+
+$bRadArticle: 7px;
+
 .fullArticle {
   border: 1px solid rgba(142, 141, 141, 0.3);
   margin-top: -2rem;
   padding: 1rem;
   box-shadow: 0.5px 0.5px 20px 0.2px rgba(0, 0, 0, 0.1);
-  border-radius: 7px;
+  border-radius: $bRadArticle;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 
   .articlePicture {
+    max-width: 600px;
     max-height: 500px;
+    margin: 0 auto;
+    border-radius: $bRadArticle;
     display: flex;
     justify-content: center;
   
     img {
-      border-radius: 7px;
+      border-radius: $bRadArticle;
     }
+  
   }
 
   .articleContent {
