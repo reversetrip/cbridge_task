@@ -5,8 +5,9 @@ import { Article } from '../recoil/articles/index';
 
 const link = 'https://newsapi.org/v2/everything?';
 const params = 'q=technologies&language=en&from=2023-01-14&sortBy=popularity&apiKey=';
-const apiKey = '6a6959e75d184ad6b8902b36f5e33b54';
-export const url = link + params + apiKey;
+const token = process.env.REACT_APP_ARTICLES_API_KEY;
+// API key for CodeBridge - 6a6959e75d184ad6b8902b36f5e33b54
+export const url = link + params + token;
 
 export type TApiResponse = {
   error: any;

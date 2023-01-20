@@ -12,9 +12,10 @@ const ArticleCard = (props: Article | ExtendedArticle) => {
     urlToImage: image,
     title
   } = props;
+
   const [display, setDisplay] = useRecoilState(displayAtom);
   const [keywords, setKeywords] = useRecoilState(keywordsAtom);
-  let description = props.description.replace(/<a\b[^>]*>(.*?)<\/a>/i, ""); // removing anchor tags
+  let description = props.description.replace(/<a\b[^>]*>(.*?)<\/a>/gi, ""); // removing anchor tags
 
   function getDate() {
     const date = new Date(props.publishedAt);

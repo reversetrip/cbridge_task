@@ -42,7 +42,8 @@ const FilterByKeywords = () => {
         name='filter'
         color='primary'
         variant='outlined'
-        size='small'
+        size='medium'
+        sx={{ width: '500px' }}
         label='Filter by keywords'
         value={input}
         onChange={inputHandler}

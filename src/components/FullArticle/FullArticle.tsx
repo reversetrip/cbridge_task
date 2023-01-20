@@ -8,7 +8,7 @@ const FullArticle = () => {
     description,
     urlToImage
   } } = useLocation();
-  const descWithoutAnchors = description.replace(/<a\b[^>]*>(.*?)<\/a>/i, "");
+  const descWithoutAnchors = description.replace(/<a\b[^>]*>(.*?)<\/a>/gi, "");
 
   return (
     <article className='fullArticle'>
@@ -22,8 +22,8 @@ const FullArticle = () => {
         <h1>{title}</h1>
         <div className='articleText'>
           <p>{descWithoutAnchors.repeat(5)}</p>
-          <p>{descWithoutAnchors.repeat(4)}</p>
-          <p>{descWithoutAnchors.repeat(4)}</p>
+          <p>{descWithoutAnchors.repeat(5)}</p>
+          <p>{descWithoutAnchors.repeat(5)}</p>
         </div>
         <Link to='/'>
           <div className='linkText'>
